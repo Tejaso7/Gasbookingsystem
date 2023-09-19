@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gas Booking System</title>
+    <style>
+        /* Internal CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDEADE;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .key-features {
+            margin-top: 30px;
+        }
+
+        .key-feature {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Internal CSS for animations */
+        .fade-in {
+            opacity: 1;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+        .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+ .t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: ;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Internal JavaScript for animations */
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const elements = document.querySelectorAll('.fade-in');
+
+                elements.forEach((element) => {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                });
+            });
+        </script>
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="t">About Our Gas Booking System</h1>
+        <nav><a class="cta-button" href = "{% url 'main' %}">_Back to Home_</a></nav>
+    </header>
+    <div class="container fade-in">
+        <p>Welcome to our Gas Booking System! We are dedicated to providing you with a convenient and efficient way to book gas cylinders for your cooking and heating needs.</p>
+        <p>Our system is designed to make the gas booking process as easy as possible for you. Here are some key features of our system:</p>
+        <ul class="key-features">
+            <li class="key-feature">Online Booking: You can book gas cylinders online from the comfort of your home or office.</li>
+            <li class="key-feature">Multiple Providers: We work with multiple gas providers, giving you the flexibility to choose the one that suits your preferences.</li>
+            <li class="key-feature">Fast and Reliable: We ensure prompt and reliable delivery of gas cylinders to your doorstep.</li>
+            <li class="key-feature">Customer Support: Our dedicated customer support team is available to assist you with any questions or concerns you may have.</li>
+        </ul>
+        <p>We are committed to providing you with a safe and hassle-free experience when it comes to gas booking. Your satisfaction and safety are our top priorities.</p>
+    </div>
+    <footer>
+        &copy; 2023 Gas Booking System
+    </footer>
+</body>
+</html>

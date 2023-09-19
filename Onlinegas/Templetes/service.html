@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Booking Services</title>
+    <style>
+        /* Internal CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+           background-color:#EDEADE;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .cta-button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.cta-button1:hover {
+    background-color: #0056b3;
+}
+ .t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: ;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+    </style>
+      <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <header>
+        <h1 class="t">Gas Booking Services</h1>
+           <nav><a class="cta-button1" href = "{% url 'main' %}">_Back to Home_</a></nav>
+    </header>
+    <div class="container">
+        <h2 class="t">Our Services</h2>
+        <p>Welcome to our online Gas Booking System. We provide a range of services to make your gas booking experience convenient and hassle-free:</p>
+        <ul>
+            <li>Online Booking: Easily book gas cylinders online from the comfort of your home.</li>
+            <li>Multiple Providers: We collaborate with various gas providers, giving you options to choose from.</li>
+            <li>Fast Delivery: We prioritize quick and reliable delivery of gas cylinders to your doorstep.</li>
+            <li>Customer Support: Our dedicated support team is available to assist you with any inquiries or issues.</li>
+            <li>Secure Payments: We ensure secure and convenient payment options for your transactions.</li>
+        </ul>
+        <p>At Gas Booking Services, we are committed to your satisfaction and safety. We look forward to serving you for all your gas booking needs.</p>
+    </div>
+    <footer>
+        &copy; 2023 Gas Booking Services
+    </footer>
+</body>
+</html>

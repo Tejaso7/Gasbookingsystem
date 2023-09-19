@@ -1,0 +1,225 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Agency - Home</title>
+  <style>/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EDEADE;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.info-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px auto;
+    max-width: 1000px;
+}
+
+/* Add more CSS for styling as needed */
+
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+/* CSS for the homepage */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#EDEADE;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 20px;
+}
+
+.h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 18px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* CSS for the animations */
+
+.img {
+    animation: slide-in 3s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.gas-pump {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-opacity: 0.2;
+
+}
+     .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+ .t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: ;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+</style>
+</head>
+<body class="gas-pump">
+    <header>
+        <h1 class="t">Welcome to Our Gas Agency</h1>
+
+        <nav><a class="cta-button" href = "{% url 'main' %}">_Back to Home_</a></nav>
+
+    </header>
+
+    <section id="about" class="info-section">
+        <h2 class="t">About Us</h2>
+         <p>We are the leading gas booking agency in the city. We offer a wide range of gas products and services, including gas cylinders, gas stoves, and gas heaters. We also offer gas delivery services.</p>
+    </section>
+
+    <section id="products" class="info-section">
+        <h2 class="t">Our Products</h2>
+        <ul>
+            <li>Propane Gas</li>
+            <li>Cooking Gas</li>
+            <li>Industrial Gas</li>
+        </ul>
+    </section>
+
+    <section id="services" class="info-section">
+        <h2 class="t">Our Services</h2>
+        <ul>
+            <li>Gas Delivery</li>
+            <li>Gas Installation</li>
+            <li>Gas Safety Inspections</li>
+            <li>Emergency Gas Leak Repairs</li>
+            <li>Gas Appliance Maintenance</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Gas Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Booking</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Google Fonts for a beautiful font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+            background-image: url("https://previews.123rf.com/images/123rfexclusive/123rfexclusive2302/123rfexclusive230200456/198952984-3d-online-grocery-shopping-concept.jpg");
+        }
+
+        .container {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .btn-gas {
+            background-color: #007BFF;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn-gas:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Button Animation */
+        @keyframes buttonFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-button {
+            animation: buttonFadeIn 1s ease-in-out;
+        }
+         .t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: #3498db;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1  class="t" style="color: #3498db; font-size: 36px; font-family: 'Arial', sans-serif; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);" >REGISTER AS USER OR ADMIN</h1><br>
+
+        <!-- Login Button with Animation -->
+        <a href = "{% url 'reg_client' %}" class="btn btn-gas animated-button">Register as an client</a>
+
+        <!-- Register Button with Animation -->
+        <a href = "{% url 'reg_admin' %}" class="btn btn-gas animated-button"> Register as an Admin</a>
+
+        <!-- Image -->
+    </div>
+</body>
+</html>

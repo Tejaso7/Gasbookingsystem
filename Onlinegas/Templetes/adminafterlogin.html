@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Google Fonts for a beautiful font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background: #FF6B6B;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .service-request {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /* Button Animation */
+        @keyframes buttonFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-button {
+            animation: buttonFadeIn 1s ease-in-out;
+        }
+         .t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: ;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="t">Welcome to Admin Dashboard</h1>
+
+        <!-- Service Requests -->
+        <div class="service-request">
+            <h4>Service Request from [Client Name]</h4>
+            <p>Client ID: [Client ID]</p>
+            <p>Service Type: [Service Type]</p>
+            <p>Request Date: [Request Date]</p>
+            <button class="btn btn-primary animated-button">Accept</button>
+            <button class="btn btn-danger animated-button">Decline</button>
+        </div>
+
+        <!-- Add more service requests here... -->
+
+        <!-- Image -->
+        <img src="admin_image.jpg" alt="Admin Office" width="300">
+    </div>
+</body>
+</html>

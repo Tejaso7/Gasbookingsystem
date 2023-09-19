@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Google Fonts for a beautiful font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background: #007BFF;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+         .t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: ;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Client Dashboard -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="t">Welcome, [Client Name]</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Gas Tracking -->
+                        <h4>Gas Tracking</h4>
+                        <p>Current Gas Usage: [Gas Usage Data]</p>
+                        <p>Last Gas Refill: [Date of Last Refill]</p>
+
+                        <!-- Client Information -->
+                        <h4>Client Information</h4>
+                        <p>Client Name: [Client Name]</p>
+                        <p>Client ID: [Client ID]</p>
+                        <p>Contact Email: [Client Email]</p>
+                        <p>Address: [Client Address]</p>
+
+                        <!-- Services -->
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Gas Delivery Status: [Status]</li>
+                            <li>Payment History: [Payment History]</li>
+                            <li>Account Balance: [Account Balance]</li>
+                            <li>Request Gas Refill: [Link to Refill Request]</li>
+                            <li>Customer Support: [Customer Support Contact Info]</li>
+                        </ul>
+
+                        <!-- Logout Button -->
+                        <a href="logout.php" class="btn btn-primary btn-block">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
