@@ -1,58 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registered Users</title>
+{% extends 'base.html' %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% block title %}ONLINE GAS BOOKING{% endblock %}
 
-    <style>
-        /* Internal CSS for additional styling */
-        body {
-            background-color: #f7f7f7;
-        }
+{% block content %}
+{% include  'nav.html' %}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-         .t {
-            font-size: 48px;
-            font-family: 'Arial', sans-serif;
-            color: #3498db;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        /* Animation keyframes */
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-4 t">Registered Users</h1>
+    <div class="container" style="alignment:center;">
+        <h1 class="mt-4 t" style="font-size: 24px;">Registered Users</h1>
         <table class="table table-bordered table-hover mt-4">
             <thead class="thead-dark">
                 <tr>
@@ -101,6 +55,5 @@
             );
         });
     </script>
-</body>
-</html>
+{% endblock %}
 

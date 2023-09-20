@@ -1,0 +1,208 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#EDEADE;
+}
+
+header {
+    background-color:#3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background-image: url('');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.cta-button1:hover {
+    background-color: #0056b3;
+    color : #00FF00;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+     color : #00FF00;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+       {% load static %}
+
+.gas-pump {
+  background-image: url("{ % static 'background.jpg' % }");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-opacity:0.1;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.jumbotron {
+    background: url('gas_home.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.jumbotron p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 12px 30px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Dynamic Data Styles */
+.dynamic-data {
+    background-color: ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.dynamic-data h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dynamic-data p {
+    font-size: 16px;
+}
+
+
+/* 3D-style headline */
+.s {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color:white;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+        }
+
+        /* Animation keyframes */
+         @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+         }
+/* 3D-style headline */
+.t {
+            font-size: 48px;
+            font-family: 'Arial', sans-serif;
+            color: #3498db;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animation keyframes */
+         @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+         }
+

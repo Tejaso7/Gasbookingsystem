@@ -1,87 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Gas Booking Service</title>
-    <!-- Add Bootstrap CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-r4I7U2HS8fGgjFlFy2fGTOMVy2Cp2ouh/x9s3xy5r6b+B7ut/rRImT7f5F5KnH3HJ" crossorigin="anonymous">
-    <style>
-        /* Internal CSS for additional styling */
-        body {
-            background-color: #EDEADE;
-        }
+{% extends 'base.html' %}
 
-        .container {
-            margin-top: 20px;
-        }
+{% block title %}ONLINE GAS BOOKING{% endblock %}
 
-        .contact-info {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-      header {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-         footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-.cta-button1 {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-.cta-button1:hover {
-    background-color: #0056b3;
-}
- .t {
-            font-size: 48px;
-            font-family: 'Arial', sans-serif;
-            color: ;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        /* Animation keyframes */
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
-</head>
-<body>
+{% block content %}
+{% include  'nav.html' %}
 <header>
-      <h1 class="mt-5 t">Contact Gas Booking Service</h1>
-    <nav><a class="cta-button1" href = "{% url 'main' %}">_Back to Home_</a></nav>
+      <h1 class="mt-5 t" style="color:#FFFFF0;font-size: 34px;">Contact Gas Booking Service</h1>
 
 </header>
 
@@ -113,5 +37,4 @@
     <!-- Add Bootstrap JS and Popper.js (for Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+mbx4nXknqqKt8Jw/J5qh5F5t6Fj5B5zq5U5PCU5bPq5f5B5M" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-bZ1mK6DQjg5f6yF6F7fOJCUrF5n5z5B5r5g5U5z5Z5P5Z5f5H5F5v5P5v5g5T5z5f5B5M" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock %}
