@@ -1,6 +1,6 @@
 # Gas Booking System
 
-![Gas Cylinder]( https://gas-booking-demo.netlify.app)
+![Gas Cylinder]()
 
 Welcome to the Gas Booking System repository! This system is designed to streamline the process of booking gas cylinders for customers. It ensures a hassle-free experience for both users and gas distributors.
 
